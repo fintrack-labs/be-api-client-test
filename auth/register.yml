@@ -1,0 +1,25 @@
+info:
+  name: register
+  type: http
+  seq: 1
+
+http:
+  method: post
+  url: "{{URL}}/user/register"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "saifulhq@gmail.com",
+        "password": "password123",
+        "name": "Saiful Haqqi"
+      }
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

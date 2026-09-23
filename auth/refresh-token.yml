@@ -1,0 +1,24 @@
+info:
+  name: refresh-token
+  type: http
+  seq: 3
+
+http:
+  method: post
+  url: "{{URL}}/refresh-token"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "clientId": "3f9e8b24-71ca-4d5b-a193-0c48e2b61f74",
+        "refreshToken" : "676c05a3ec9fad2fc1774dffb07224f76295c29adf01f922ae67cd096485f327d9e218afbbfae406"
+      }
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
