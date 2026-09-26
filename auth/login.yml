@@ -13,9 +13,10 @@ http:
     type: json
     data: |-
       {
-        "email": "user@example.com",
+        "email": "saifulhq@gmail.com",
         "password": "password123",
-        "clientId": "3f9e8b24-71ca-4d5b-a193-0c48e2b61f74"
+        "clientId": "3f9e8b24-71ca-4d5b-a193-0c48e2b61f74",
+        "clientSecret": "51c92a8b-ef34-4bc1-9d82-0a7b6c5e4d3f"
       }
 
 settings:
