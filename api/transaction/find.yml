@@ -1,13 +1,19 @@
 info:
   name: find
   type: http
-  seq: 3
+  seq: 2
 
 http:
   method: GET
-  url: "{{URL}}/categories?name&page=1&limit=10&sortBy&sortOrder=ASC"
+  url: "{{URL}}/transactions?type&currency=IDR&search&page=1&limit=10&sortBy&sortOrder=ASC"
   params:
-    - name: name
+    - name: type
+      value: ""
+      type: query
+    - name: currency
+      value: IDR
+      type: query
+    - name: search
       value: ""
       type: query
     - name: page

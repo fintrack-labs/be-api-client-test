@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{URL}}/accounts/6"
+  url: "{{URL}}/accounts/7"
   auth:
     type: bearer
     token: "{{TOKEN}}"
