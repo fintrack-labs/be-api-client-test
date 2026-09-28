@@ -1,5 +1,5 @@
 info:
-  name: save
+  name: save - expense
   type: http
   seq: 6
 
@@ -13,7 +13,7 @@ http:
         "sourceAccountId": 7,
         "type": "EXPENSE",
         "paymentMethod": "CASH",
-        "amount": 150000,
+        "amount": 5000,
         "transactionDate": "2026-09-28T13:00:00.000Z",
         "categoryId": 7,
         "merchantName": "Starbucks Coffee",
