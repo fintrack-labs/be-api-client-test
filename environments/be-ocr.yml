@@ -1,0 +1,11 @@
+name: be-ocr
+variables:
+  - name: URL
+    value: http://localhost:8888
+    description: ""
+  - name: TOKEN
+    value: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImZpbnRyYWNrLWF1dGgta2V5LXYxIn0.eyJ1c2VySWQiOiIxMjI2MDAwMSIsIm5hbWUiOiJTYWlmdWwgSGFxcWkiLCJlbWFpbCI6InNhaWZ1bGhxQGdtYWlsLmNvbSIsImFkR3JvdXAiOltdLCJjbGllbnRJZCI6IjNmOWU4YjI0LTcxY2EtNGQ1Yi1hMTkzLTBjNDhlMmI2MWY3NCIsInN1YiI6IjEyMjYwMDAxIiwiaWF0IjoxNzkwNzczOTg0LCJpc3MiOiJmaW50cmFjay1iZS1hdXRoIiwiZXhwIjoxNzkwNzc3NTg0fQ.ThDn5cGgp-xpuABq-dM9FQ1LDywL4wTq4Jt1OTXyZ4vxoW6HyvjpSfOYwnrxrkZuhrj6mRSm11beYHqRUQjCQf-6djTB-M3vAgYmcm-BjqeOWp3gHgGkYDpTjHLg-_F3Ms7xpdxRL3bxNyTdka6FRyHRDeOHQr1jQXVuM2vTGlFIxH1wooZAOJU-bThRLTyhb6mxdAiq7d2RgFekJFx3KYMLElsQzC7uS9BYJJRwmsg7lKUOGiqENYz6QGtbFiPhVm-Bf5ND-lYFlMIQRrD102Q2uy2op6MHy9Ou7jxYkhY6XjLuDN-C3A6BsFfH3fb4zeNuZiIuBNC0oa7PX7O9Ng
+    description: ""
+  - name: IMAGE_PATH
+    value: /Users/saifulhq/Documents/receipt.jpg
+    description: Absolute path to a local JPEG, PNG, or WebP receipt image
