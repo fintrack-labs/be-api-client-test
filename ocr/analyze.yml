@@ -11,7 +11,9 @@ http:
     data:
       - name: image
         type: file
-        path: "{{IMAGE_PATH}}"
+        value:
+          - /Users/saifulhq/Documents/receipt.jpg
+        contentType: image/jpeg
       - name: documentType
         type: text
         value: receipt

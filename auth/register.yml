@@ -13,7 +13,7 @@ http:
     type: json
     data: |-
       {
-        "email": "saifulhq@gmail.com",
+        "email": "saiful.haqqi@quadras.co.id",
         "password": "password123",
         "name": "Saiful Haqqi"
       }
@@ -23,3 +23,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true
