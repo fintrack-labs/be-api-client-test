@@ -1,0 +1,6 @@
+name: localhost
+variables:
+  - name: URL
+    value: http://127.0.0.1:8081/auth/api
+  - name: ACTIVATION_TOKEN
+    value: replace-with-token-from-activation-email

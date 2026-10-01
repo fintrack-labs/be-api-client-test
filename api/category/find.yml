@@ -1,0 +1,33 @@
+info:
+  name: find
+  type: http
+  seq: 3
+
+http:
+  method: GET
+  url: "{{URL}}/categories?name&page=1&limit=10&sortBy&sortOrder=ASC"
+  params:
+    - name: name
+      value: ""
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: limit
+      value: "10"
+      type: query
+    - name: sortBy
+      value: ""
+      type: query
+    - name: sortOrder
+      value: ASC
+      type: query
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

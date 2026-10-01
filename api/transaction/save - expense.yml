@@ -1,0 +1,33 @@
+info:
+  name: save - expense
+  type: http
+  seq: 6
+
+http:
+  method: POST
+  url: "{{URL}}/transactions"
+  body:
+    type: json
+    data: |-
+      {
+        "sourceAccountId": 7,
+        "type": "EXPENSE",
+        "paymentMethod": "CASH",
+        "amount": 5000,
+        "transactionDate": "2026-09-28T13:00:00.000Z",
+        "categoryId": 7,
+        "merchantName": "Starbucks Coffee",
+        "description": "Beli kopi dan cemilan siang",
+        "receiptImageUrl": "https://fintrack.com",
+        "note": "Pengeluaran makan minum",
+        "isRecurring": false
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

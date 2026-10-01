@@ -1,0 +1,24 @@
+info:
+  name: logout
+  type: http
+  seq: 5
+
+http:
+  method: post
+  url: "{{URL}}/logout"
+  headers:
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "clientId": "3f9e8b24-71ca-4d5b-a193-0c48e2b61f74",
+        "refreshToken" : "902b89062d750143abcfca9cbc1b094847a6134774a6b594678f81faed3d065a86e581edfe725afb"
+      }
+
+settings:
+  encodeUrl: false
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
