@@ -1,0 +1,28 @@
+info:
+  name: save
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{URL}}/accounts"
+  body:
+    type: json
+    data: |-
+      {
+        "id": null,
+        "name": "Dompet",
+        "type": "CASH",
+        "balance": 50000,
+        "accountNumber": "",
+        "currency": "IDR"
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

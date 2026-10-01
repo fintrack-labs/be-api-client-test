@@ -1,0 +1,26 @@
+info:
+  name: update
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{URL}}/categories/19"
+  body:
+    type: json
+    data: |-
+      {
+        "id": 5,
+        "name": "Pingpong",
+        "type": "EXPENSE",
+        "parentId": null
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

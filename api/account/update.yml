@@ -1,0 +1,28 @@
+info:
+  name: update
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: "{{URL}}/accounts/6"
+  body:
+    type: json
+    data: |-
+      {
+        "id": null,
+        "name": "E-Toll Mandiri",
+        "type": "E_WALLET",
+        "balance": 200000,
+        "accountNumber": "1021032043055",
+        "currency": "IDR"
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
